@@ -5,22 +5,20 @@ body{
   background:#050816;
   color:white;
 }
-
 /* HEADER */
-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px;
-  background:rgba(10,12,30,0.8);
-  backdrop-filter: blur(10px);
-}
+  <header class="navbar">
+  <h1>GTA MODS</h1>
 
-header h1{
-  color:#00e5ff;
-  text-shadow:0 0 15px #00e5ff;
-}
-
+  <nav>
+  <div class="search-box">
+  <input type="text" placeholder="جستجوی مود GTA...">
+</div>
+    <a href="#">مودها</a>
+    <a href="#">دانلود</a>
+    <a href="#">گرافیک</a>
+    <a href="#">اسکریپت</a>
+  </nav>
+</header>
 /* HERO */
 .hero{
   text-align:center;
@@ -70,8 +68,8 @@ header h1{
   gap:20px;
   padding:20px;
 }
-
-.card{
+  
+  .card{
   background:#0b0f2a;
   border-radius:15px;
   overflow:hidden;
@@ -107,5 +105,31 @@ header h1{
   background:linear-gradient(45deg,#00e5ff,#7c4dff);
   color:white;
   text-decoration:none;
+header{
+  position:sticky;
+  top:0;
+  z-index:999;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+  background:rgba(10,12,30,0.6);
+  backdrop-filter:blur(15px);
+  border-bottom:1px solid #1f2a5a;
 }
-</style>
+
+header h1{
+  color:#00e5ff;
+  text-shadow:0 0 15px #00e5ff;
+}
+
+nav a{
+  color:#00e5ff;
+  text-decoration:none;
+  margin:0 10px;
+  font-size:14px;
+}
+
+nav a:hover{
+  text-shadow:0 0 10px #00e5ff;
+}
